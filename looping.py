@@ -1,0 +1,12 @@
+print(1,2,3,4,5,6,7,8,9)
+for x in range (1,10):
+    print(x)
+print(1)
+print(22)
+print(333)
+print(4444)
+print(55555)
+print(666666)
+print(7777777)
+print(88888888)
+print(999999999)
