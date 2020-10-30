@@ -1,0 +1,6 @@
+myFile = open("newFile.txt", "w")
+myFile.write("I am adding some stuff")
+myFile.close()
+myFile = open("newFile.txt","r")
+print(myFile.read())
+myFile.close()
