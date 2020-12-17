@@ -6,6 +6,32 @@ import time
 import random
  
 pygame.init()
+
+def main():
+   menu()
+
+def menu():
+    print("************Welcome to Snake Game**************")
+    print()
+
+    choice = input("""
+                      A: Easy
+                      B: Medium
+                      C: Hard
+                      Q: Quit
+
+                      Please enter your choice: """)
+
+    if choice == "A" or choice =="a":
+        gameloop()
+    elif choice == "B" or choice =="b":
+        gameloop()
+        snake_speed = 20
+    elif choice=="C" or choice=="c":
+        gameloop()
+        snake_speed = 30
+    elif choice == "Q" or choice == "q":
+        sys.exit
  
 white = (255, 255, 255)
 yellow = (255, 255, 102)
@@ -18,7 +44,7 @@ dis_width = 600
 dis_height = 400
  
 dis = pygame.display.set_mode((dis_width, dis_height))
-pygame.display.set_caption('Snake Game by Edureka')
+pygame.display.set_caption('Snake')
  
 clock = pygame.time.Clock()
  
